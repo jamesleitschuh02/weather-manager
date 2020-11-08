@@ -1,0 +1,63 @@
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar{
+    text-align: center;
+}
+
+.sideBar{
+    margin-top: 10px;
+}
+
+#search-btn, #search-bar{
+    border-radius: 5px;
+}
+
+#search-btn:hover{
+    cursor: pointer;
+}
+
+.list-group-item{
+    text-align: center;
+    background-color: rgb(218, 214, 214);
+}
+
+.list-group-item:hover{
+    cursor: pointer;
+}
+
+.card{
+    border-radius: 10px;
+}
+
+.card-color{
+    background-color: lightblue;
+    font-size: smaller;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 5px 5px grey;
+}
+
+#current-info{
+    background-color: lightblue;
+    box-shadow: 5px 5px grey;
+}
+
+#uvi{
+    width: 35px;
+    border-radius: 5px;
+}
+
+.low{
+    background-color: yellowgreen;
+}
+
+.medium{
+    background-color: yellow;
+}
+
+.high{
+    background-color: red;
+}
+
