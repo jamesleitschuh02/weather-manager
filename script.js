@@ -14,6 +14,7 @@ $("#search-btn").on("click", function(){
     getCoordinates(city);
 });
 
+//function calls first api to get coordiantes of city
 function getCoordinates(city){
     
     let URL = "http://api.openweathermap.org/data/2.5/weather?q=";
@@ -34,6 +35,7 @@ function getCoordinates(city){
     });
 };
 
+//function uses second api call to append current wetaher info to main card in html
 function displayStats(cityName){
     
     let lonInfo = localStorage.getItem(cityName+"lon");
@@ -78,6 +80,7 @@ function displayStats(cityName){
     });
 };
 
+//funciton displays user searches in history card
 function displayHistory(){
     let cityName = localStorage.getItem("city");
     let cityHistory = $("<li>");
@@ -87,6 +90,7 @@ function displayHistory(){
     $(".list-group-flush").prepend(cityHistory);
 };
 
+//function creates a five day forecast
 function fiveDay(cityName){
     let lonInfo = localStorage.getItem(cityName+"lon");
     let latInfo = localStorage.getItem(cityName+"lat");
@@ -132,6 +136,7 @@ function fiveDay(cityName){
     });
 };
 
+//function allows user to click any of the previous search and display ressults
 function historyClick(cityName){
     clearCard();
     displayStats(cityName);
@@ -139,6 +144,7 @@ function historyClick(cityName){
     localStorage.setItem("lastCity", cityName);
 };
 
+//function clears information to allow new information
 function clearCard(){
     $("#date-current").empty();
     $("#temp-current").empty();
