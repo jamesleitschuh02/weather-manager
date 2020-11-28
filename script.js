@@ -17,7 +17,7 @@ $("#search-btn").on("click", function(){
 //function calls first api to get coordiantes of city
 function getCoordinates(city){
     
-    let URL = "http://api.openweathermap.org/data/2.5/weather?q=";
+    let URL = "https://api.openweathermap.org/data/2.5/weather?q="; //here
     let queryURL = URL + city + key;
     
     $.ajax({
